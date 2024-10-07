@@ -336,7 +336,19 @@ a {
 
 /* Contact Section */
 .contact {
+    background-color: #333; /* Match the background color of the theme */
+    padding: 40px; /* Add padding to give space around the form */
+    margin: 40px auto;
+    max-width: 800px; /* Limit the form width */
+    border-radius: 8px; /* Add a slight border radius to the section */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
     text-align: center;
+}
+
+.contact h1 {
+    color: #5AEC5A; /* Accent color for the heading */
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 form {
@@ -345,17 +357,52 @@ form {
     align-items: center;
 }
 
+/* Style for input fields and textarea */
 input, textarea {
-    margin: 10px;
-    padding: 10px;
-    width: 80%;
-    max-width: 500px;
+    background-color: #444; /* Dark background for inputs */
+    color: #F0EBE5; /* Light text color */
+    border: none; /* Remove default borders */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* More padding for better UX */
+    margin: 10px 0; /* Margin between fields */
+    width: 80%; /* Responsive width */
+    max-width: 500px; /* Max width to ensure the form doesn't get too wide */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    font-size: 1rem;
+    outline: none; /* Remove default outline */
 }
 
-button {
+/* Hover effect for inputs */
+input:focus, textarea:focus {
+    box-shadow: 0 0 8px rgba(90, 236, 90, 0.8); /* Greenish glow on focus */
+    outline: none; /* Remove outline */
+}
+
+
+textarea {
+    height: 150px; /* Taller textarea */
+    resize: none; /* Prevent resizing */
+}
+
+.contactbtn{
+    margin: 2%;
+    width: 15%;
+    height: 40px;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
     background-color: #5AEC5A;
     color: #2A2829;
-    padding: 10px 20px;
-    border: none;
+    box-shadow: 0 9px #1F903B;
+    font-family: "Inria Sans";
+}
+
+.contactbtn:hover{
     cursor: pointer;
+    background-color: #54dc54;
+}
+
+.contactbtn:active{
+    background-color: #54dc54;
+    box-shadow: 0 5px #1F903B;
+    transform: translateY(4px);
 }
