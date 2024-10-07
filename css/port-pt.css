@@ -1,0 +1,361 @@
+/* General Styling */
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inria Sans", sans-serif;
+    color: #F0EBE5;
+    background-color: #2A2829;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styling */
+.header {
+    position: relative;
+    height: 100vh; /* Full-screen header */
+    background-color: #2A2829; /* Dark background */
+    color: #F0EBE5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Separate 'Página Inicial' on the left and rest on the right */
+    align-items: center; /* Vertically align items */
+    padding: 10px 2%; /* Ensure some padding but not too much */
+    background-color: rgba(42, 40, 41, 0.9); /* Navbar background */
+    position: fixed;
+    width: 100%; /* Full width */
+    top: 0;
+    z-index: 10;
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
+}
+
+/* 'Página Inicial' aligned left */
+.navbtn.home {
+    flex-shrink: 0; /* Prevents shrinking */
+    color: #F0EBE5;
+    margin-right: auto; /* Pushes the other links to the right */
+}
+
+/* Right-side nav links */
+.nav-links {
+    display: flex;
+    justify-content: flex-end; /* Right-align the nav links */
+    gap: 20px; /* Space between the links */
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* General styles for nav buttons */
+.navbtn {
+    color: #F0EBE5;
+    font-size: 1.1rem;
+}
+
+.navbtn:hover {
+    color: #5AEC5A;
+}
+
+@media (max-width: 1200px) {
+    .navbtn {
+        font-size: 0.95rem; /* Reduce font size slightly for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+        padding: 10px;
+    }
+
+    .nav-links {
+        justify-content: center; /* Center-align links on small screens */
+        gap: 10px;
+    }
+
+    .navbtn {
+        font-size: 0.9rem; /* Reduce font size further on small screens */
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 15%; /* Adjust as needed for vertical centering */
+}
+
+.welcome {
+    font-size: 3rem;
+    color: #5AEC5A;
+    margin-bottom: 0;
+}
+
+.nome {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #5AEC5A; /* Same highlight color */
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #F0EBE5;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #5AEC5A;
+    color: #2A2829;
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4db74d;
+}
+
+/* About Me Section */
+.about-section {
+    background-color: #333; /* Dark background to match the theme */
+    color: #F0EBE5; /* Light text color */
+    padding: 40px; /* Add some padding inside the section */
+    margin: 40px auto; /* Add margin to separate from other sections */
+    max-width: 1200px; /* Set a maximum width */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+}
+
+/* Flexbox for About Me content */
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Space between text and image */
+}
+
+/* Text styling */
+.about-text {
+    flex: 1; /* Make the text take up half of the container */
+}
+
+.about-text h1 {
+    font-size: 2rem;
+    color: #5AEC5A; /* Accent color for the heading */
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify; /* This justifies the text */
+}
+
+/* Image styling */
+.about-photo {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    width: 250px; /* Fixed width for the image */
+    height: 250px; /* Fixed height for the image */
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Hide overflow so the image stays within the circle */
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits within the circle */
+    border-radius: 50%; /* Ensure circular image */
+}
+
+/* Journey Section */
+.journey {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.journey-section {
+    margin-bottom: 30px; /* Add spacing between School Journey and Work Experience sections */
+}
+
+.journey-title {
+    font-size: 1.5rem; /* Title size */
+    color: #5AEC5A; /* Match your theme color */
+    margin-bottom: 20px; /* Spacing between the title and the timeline */
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Add spacing between the two lines */
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; /* Adjust spacing between steps */
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5AEC5A;
+    margin: 10px 0;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: #5AEC5A;
+    margin-top: 18px; /* Align the lines with the circles */
+}
+
+.halfline {
+    width: 50px;
+    height: 3px;
+    background-color: #5AEC5A;
+    margin-top: 18px; /* Align the lines with the circles */
+}
+
+/* Project Section */
+.projects {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    color: #F0EBE5;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h4 {
+    color: #5AEC5A;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card .button {
+    display: inline-block;
+    background-color: #5AEC5A;
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card .button:hover {
+    background-color: #4db74d;
+}
+
+/* Links Section */
+.links {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.grid-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkbtn{
+    margin: 2%;
+    width: 15%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5AEC5A;
+    box-shadow: 0 9px #1F903B;
+    font-family: "Inria Sans";
+}
+
+.linkbtn:hover{
+    cursor: pointer;
+    background-color: #54dc54;
+}
+
+.linkbtn:active{
+    background-color: #54dc54;
+    box-shadow: 0 5px #1F903B;
+    transform: translateY(4px);
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+button {
+    background-color: #5AEC5A;
+    color: #2A2829;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

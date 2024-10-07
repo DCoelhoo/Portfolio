@@ -1,0 +1,68 @@
+html{
+    font-size: 20px;
+    font-family: "Inria Sans";
+}
+
+body {
+    background-color: #2A2829;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+
+}
+
+h1 {
+    margin-top: 15%;
+    color: #F0EBE5;
+    font-size: 80px;
+}
+
+.buttons {
+    margin-top: 5%;
+}
+
+
+.button_pt{
+    margin: 2%;
+    width: 15%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5AEC5A;
+    box-shadow: 0 9px #1F903B;
+    font-family: "Inria Sans";
+}
+
+.button_pt:hover{
+    cursor: pointer;
+    background-color: #54dc54;
+}
+
+.button_pt:active{
+    background-color: #54dc54;
+    box-shadow: 0 5px #1F903B;
+    transform: translateY(4px);
+}
+
+.button_eng{
+    margin: 2%;
+    width: 15%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #78BEFF;
+    box-shadow: 0 9px #263A99;
+    font-family: "Inria Sans";
+}
+
+.button_eng:hover{
+    cursor: pointer;
+    background-color: #67a3db;
+}
+
+.button_eng:active{
+    background-color: #67a3db;
+    box-shadow: 0 5px #263A99;
+    transform: translateY(4px);
+}
