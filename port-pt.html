@@ -159,11 +159,11 @@
         <!-- Contact Section -->
         <div id="contact" class="contact">
             <h1>Contacto</h1>
-            <form>
+            <form action="https://formspree.io/f/xlderonq" method="POST">
                 <!-- Contact Form -->
-                <input type="text" placeholder="Nome" />
-                <input type="email" placeholder="Email" />
-                <textarea placeholder="Mensagem"></textarea>
+                <input type="text" name="name" placeholder="Nome" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea name="message" placeholder="Mensagem" required></textarea>
                 <button type="submit" class="contactbtn">Enviar</button>
             </form>
         </div>
