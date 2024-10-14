@@ -3,10 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/index.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="/css/port-eng.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inria+Sans:300,300italic,regular,italic,700,700italic" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png" />
+    <title>Portfolio</title>
 </head>
 <body>
-    
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <a class="navbtn home" href="index.html">Home</a>
+            <div class="nav-links">
+                <a class="navbtn" href="#about">About Me</a>
+                <a class="navbtn" href="#journey">Journey</a>
+                <a class="navbtn" href="#projects">Projects</a>
+                <a class="navbtn" href="#links">Links</a>
+                <a class="navbtn" href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1 class="welcome">Welcome</h1>
+            <h2 class="nome">My name is <span class="highlight">Diogo Gonçalves</span></h2>
+            <p class="tagline">Developer | Creator of Digital Solutions</p>
+            <a href="#projects" class="cta-button">See Projects</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main">
+        <!-- About Me Section -->
+        <div class="about-section" id="about">
+            <div class="about-content">
+                <!-- Text Area -->
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <p>
+                        Hello! My name is Diogo Gonçalves, and I am a working student in the field of programming, with a strong 
+                        interest in software development and creating technological solutions that simplify people's lives. 
+                        I focus on developing efficient, scalable, and easy-to-maintain solutions, always paying attention to code quality 
+                        and best development practices. <br><br>
+
+                        I have a degree in Computer Engineering and solid knowledge of various languages, such as Python, C#, HTML, 
+                        CSS, and JavaScript. I also have some experience in mobile application development and databases. <br><br>
+
+                        I am always motivated to learn new technologies, tools, and methodologies, seeking to contribute 
+                        positively to the success of the projects I participate in.
+                    </p>
+                </div>
+                <!-- Image Area -->
+                <div class="about-photo">
+                    <img src="imgs/pfp.jpeg" alt="Diogo Gonçalves" />
+                </div>
+            </div>
+        </div>
+
+        <div id="journey" class="journey">
+            <h1>Journey</h1>
+        
+            <!-- School Journey Section -->
+            <div class="journey-section">
+                <h3 class="journey-title">Academic Background</h3>
+                
+                <!-- First line of steps (School Journey) -->
+                <div class="timeline">
+                    <div class="step">
+                        <p>Technician Course in IT <br> Equipment Management</p>
+                        <div class="circle"></div>
+                        <p>2017</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step">
+                        <p>CTeSP - Development for <br> Mobile Devices</p>
+                        <div class="circle"></div>
+                        <p>2020</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step">
+                        <p>Bachelor’s in <br> Computer Engineering</p>
+                        <div class="circle"></div>
+                        <p>2022</p>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        
+            <!-- Work Experience Section -->
+            <div class="journey-section">
+                <h3 class="journey-title">Work Experience</h3>
+                
+                <!-- Second line of steps (Work Experience) -->
+                <div class="timeline">
+                    <div class="step">
+                        <a href="https://logicwise.pt/" target="_blank" class="journey-btn"><p>Logic Wise <br> (3-month Internship)</p></a>
+                        <div class="circle"></div>
+                        <p>2019</p>
+                    </div>
+                    <div class="halfline"></div>
+                    <div class="step">
+                        <a href="https://logicwise.pt/" target="_blank" class="journey-btn"><p>Logic Wise <br> (3-month Internship)</p></a>
+                        <div class="circle"></div>
+                        <p>2020</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step">
+                        <a href="https://werk.pt/" target="_blank" class="journey-btn"><p>Werk It Solutions</p></a>
+                        <div class="circle"></div>
+                        <p>2022</p>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="imgs/crudPython.png" alt="Project 1 Image">
+                    <h4>CRUD Application</h4>
+                    <p>CRUD application for a workshop.</p>
+                    <p><strong>Technologies:</strong> Python, SQLite3</p>
+                    <a href="https://link-to-project1.com" class="button">View Project</a>
+                </div>
+                <div class="card">
+                    <img src="imgs/2dgame.png" alt="2D game img">
+                    <h4>2D Platform Game</h4>
+                    <p>2D platform game built in Unity.</p>
+                    <p><strong>Technologies:</strong> C#, Unity</p>
+                    <a href="https://github.com/DCoelhoo/2D-Unity-Platformer" class="button" target="_blank">View Project</a>
+                </div>
+                <div class="card">
+                    <img src="imgs/portproject.png" alt="Portfolio">
+                    <h4>Portfolio</h4>
+                    <p>Personal portfolio in Portuguese and English.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://link-to-project2.com" class="button">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <div id="links" class="links">
+            <h1>Links</h1>
+            <div class="grid-services">
+                <div class="service-box">
+                    <a href="https://github.com/DCoelhoo" target="_blank"><button class="linkbtn">Github</button></a>
+                    <button class="linkbtn">PDF Resume</button>
+                    <a href="https://www.linkedin.com/in/diogo-gon%C3%A7alves-36a09324a/" target="_blank"><button class="linkbtn">LinkedIn</button></a>
+                </div>
+                <div class="service-box"></div>
+                <div class="service-box"></div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="contact">
+            <h1>Contact</h1>
+            <form action="https://formspree.io/f/xlderonq" method="POST">
+                <!-- Contact Form -->
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="contactbtn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
 </body>
 </html>

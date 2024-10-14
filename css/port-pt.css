@@ -261,6 +261,10 @@ a {
     margin-bottom: 20px;
 }
 
+.journey-btn:hover{
+    text-decoration: underline;
+}
+
 .timeline {
     display: flex;
     justify-content: center;
