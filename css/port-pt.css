@@ -370,6 +370,7 @@ a {
 
 .card .button:hover {
     background-color: #4db74d;
+    cursor: pointer;
 }
 
 @media (max-width: 576px) {
